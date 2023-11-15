@@ -9,8 +9,7 @@ func main() {
 
 	if a != b {
 		sum := a + b
-		a += sum
-		b += sum
+		a, b = sum, sum
 	} else if a == b {
 		a, b = 0, 0
 	}

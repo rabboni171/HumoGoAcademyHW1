@@ -3,19 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	var someNumber int
 
-	fmt.Scan(&someNumber)
-	if someNumber > 100 {
-		firstDigit := someNumber / 100
-		LastDigit := someNumber % 10
+	var A, B, C int
 
-		if firstDigit > LastDigit {
-			fmt.Println(firstDigit)
-		} else if firstDigit < LastDigit {
-			fmt.Println(LastDigit)
-		}
+	fmt.Scan(&A, &B, &C)
+
+	if A <= C && C <= B {
+		fmt.Println("Yes")
+	} else {
+		fmt.Println("No")
 	}
-	fmt.Println("Chislo menshe 100")
-
 }
